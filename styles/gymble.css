@@ -1,0 +1,24 @@
+.gymble{
+    display: flex;
+    justify-content: center;
+}
+.gymble-logo{
+    width:300px;
+}
+.prim-hbtns{
+    padding: 12px 30px;
+    color:white;
+    border-radius: 30px;
+    border: none;
+    background:linear-gradient(45deg, rgba(15, 92, 185, 0.84),rgba(41, 30, 30, 0.553));
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 250px;
+  }
+  .prim-hbtns:hover{
+    background:linear-gradient(45deg, rgba(41, 30, 30, 0.553),rgba(15, 92, 185, 0.84));
+  }
+  .hbtns{
+    display: block;
+    
+  }
