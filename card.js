@@ -1,4 +1,4 @@
-class card{
+class Card{
     constructor({
         imageUrl,
     }){

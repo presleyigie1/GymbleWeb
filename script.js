@@ -18,7 +18,7 @@ let cardCount = 0;
 
 // functions
 function appendNewCard(){
-    const card = new card({
+    const card = new Card({
         imageUrl: urls[cardCount % 5]
     });
     card.element.style.setProperty('--i',cardCount%5);
