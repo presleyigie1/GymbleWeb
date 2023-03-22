@@ -35,6 +35,12 @@ class card{
     }
 
     #handleMouseMove=(e) => {
+        if(!this.#startPoint) return;
+        const {clientX, clientY} = e;
+        this.#offsetX = clientX - this.#startPoint.x;
+        this.#offsetY = clientY - this.#startPoint.y;
+        this.element.style.transform = `translate(${this.
+        #offsetX}px, ${this.#offsetY}px)`;
        
 
     }
