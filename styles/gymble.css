@@ -1,3 +1,22 @@
+*{
+  font-family:'Overpass',sans-serif;
+} 
+
+.html,body{
+  margin: 0;
+  padding: 0;
+  text-align:center;
+  min-height:100vh;
+  
+}
+.overlay{
+ /* background:linear-gradient(to bottom, rgba(30, 29, 29, 0.799),rgba(89, 101, 209, 0.567) 100%);
+  width:100vw;
+  height: 100vh;
+  position:fixed;*/
+}
+
+
 .gymble{
     display: flex;
     justify-content: center;
@@ -20,5 +39,5 @@
   }
   .hbtns{
     display: block;
-    
   }
+  
