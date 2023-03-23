@@ -42,3 +42,52 @@ user-select: none;
     object-fit: cover;
     object-position: 50% 50%;
 }
+
+#like,
+#dislike{
+    font-size: 16vh;
+    border-radius: 50%;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    animation-name: iconAnimation1;
+    animation-duration:1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    /* dont run the animation at the beginnning */
+    animation-play-state: paused;
+
+
+
+}
+#like.trigger,
+#dislike.trigger{
+     animation-name: iconAnimation2;
+}
+
+#like{
+    color: red;
+    background-color: rgba(255, 255, 255 ,0.5);
+}
+
+#dislike{
+    color:#ccc;
+    background-color: rgba(0,0,0,0.5);
+}
+@keyframes iconAnimation1 {
+    0%,100%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+@keyframes iconAnimation2 {
+    0%,100%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 1;
+    }
+    
+}
