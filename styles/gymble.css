@@ -1,3 +1,5 @@
+/*Home page - Login/Sign Up*/
+
 *{
   font-family:'Overpass',sans-serif;
 } 
@@ -10,10 +12,10 @@
   
 }
 .overlay{
- /* background:linear-gradient(to bottom, rgba(30, 29, 29, 0.799),rgba(89, 101, 209, 0.567) 100%);
+  background:linear-gradient(to bottom, rgba(30, 29, 29, 0.799),rgba(89, 101, 209, 0.567) 100%);
   width:100vw;
   height: 100vh;
-  position:fixed;*/
+  position:fixed;
 }
 
 
@@ -34,10 +36,53 @@
     font-size: 15px;
     width: 250px;
   }
-  .prim-hbtns:hover{
-    background:linear-gradient(45deg, rgba(41, 30, 30, 0.553),rgba(15, 92, 185, 0.84));
-  }
-  .hbtns{
-    display: block;
-  }
-  
+.prim-hbtns:hover{
+  background:linear-gradient(45deg, rgba(41, 30, 30, 0.553),rgba(15, 92, 185, 0.84));
+}
+.hbtns{
+  display: block;
+}
+
+.sign-in,.sign-up{
+  background-color: white;
+  padding-top: 10px;;
+  border-radius: 30px;
+  margin:60px;
+  height: 200px;
+  text-align: center;
+}
+
+.sign-up{
+  height:270px;
+}
+.email ,.password{
+  font-size: 20px;
+}
+.exit-icon{
+  float:right;
+  position:relative;
+  left:-20px; 
+  font-size: 30px;
+}
+.submit-btn:hover{
+  background:linear-gradient(45deg, rgba(41, 30, 30, 0.553),rgba(15, 92, 185, 0.84));
+
+}
+.submit-btn{
+  cursor:pointer;
+  color: white;
+  width:auto;
+  height:30px;
+  background:linear-gradient(45deg, rgba(15, 92, 185, 0.84),rgba(41, 30, 30, 0.553));
+  padding: 0 20px;
+}
+
+#signin{
+  display: none;
+}
+.exit-icon{
+  cursor: pointer;
+}
+#signup{
+  display: none;
+}

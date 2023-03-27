@@ -5,21 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/gymble.css">
+    <script src="js/form.js"></script>
     <title>Gymble | Home</title>
 </head>
 <body>
     <div class = "overlay">
         <div class="gymble">
-        <img class="gymble-logo" src="images/logo.jpg" alt="Gymble logo">
+        <img class="gymble-logo" src="images/logo.png" alt="Gymble logo">
         
         </div>
-
+        <!-- https://www.youtube.com/watch?v=Lcih8lCY19k / video tutorial to create a working login form-->
         <div class = "hbtns">
-            <button class ="prim-hbtns"> Sign In</button>
+            <button class ="prim-hbtns" onclick="showLog()"> Sign In</button>
+            <div class="sign-in" id="signin">
+                <span class="exit-icon" id="exitLog" onclick="hideLog()">ⓧ</span>
+                <h2 class = "heading">Log In</h2>
+                <input type="email" placeholder="email" autocomplete="on" class="email" required/>
+                <br>
+                <br>
+                <input type="password" placeholder="password" autocomplete="off" class="password" required/>
+                <br>
+                <br>
+                <button class="submit-btn">Submit</button>
+            </div>
         
         <br>
         <br>
-            <button class ="prim-hbtns"> Sign Up</button>
+            <button class ="prim-hbtns" onclick="showSign()"> Sign Up</button>
+            <div class="sign-up" id="signup">
+                <span class="exit-icon" id="exitLog" onclick="hideSign()">ⓧ</span>
+                <h2 class = "heading"><em>Create An Account</em></h2>
+                <input type="email" placeholder="email" autocomplete="on" class="email" required/>
+                <br>
+                <br>
+                <input type="password" placeholder="password" autocomplete="off" class="password" required/>
+                <br>
+                <br>
+                <input type="password" placeholder="Retype-password" autocomplete="off" class="password" required/>
+                <br>
+                <br>
+                <button class="submit-btn">Submit</button>
+                 
+
+            </div>
+
         </div>
     </div>
     
