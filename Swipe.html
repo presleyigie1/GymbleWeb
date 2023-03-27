@@ -9,13 +9,16 @@
    initial-scale="1.0">
    <title>Swipe to match</title>
    <link rel="stylesheet" href="./style.css">
+   <link rel="stylesheet" href="./nav.css">
+   <!--Title bar icon-->
+   <link rel="icon" type="image/x-icon" href="images/icon.png">
 
 
 </head>
 
 <!--https://www.youtube.com/watch?v=cUGSEMS8EmI&t=1063s-->
 <body>
-  <div id="preloader"></div>
+
 
   <ion-icon id="dislike"
    name="heart-dislike-circle-outline"></ion-icon>
@@ -34,12 +37,38 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
-<script>
-  var loader = document.getElementById("preloader");
-  window.addEventListener("load", function(){
-    loader.style.display = "none";
-  })
-</script>
+
+<!-- code for the bottom navbar -->
+<div class="navbar">
+  <li class="list-item">
+    <a href="Swipe.html">
+      <ion-icon name="copy-outline"></ion-icon>
+    <span class="list-item-name">Home</span>
+  </a>
+  </li>
+  <li class="list-item">
+    <a href="messages.html">
+      <ion-icon name="chatbubble-outline"></ion-icon>
+    <span class="list-item-name">Messages</span>
+  </a>
+  </li>
+  <li class="list-item">
+    <a href="search.html">
+      <ion-icon name="search-outline"></ion-icon>
+    <span class="list-item-name">Search</span>
+  </a>
+  </li>
+  <li class="list-item">
+    <a href="profile.html">
+      <ion-icon name="person-outline"></ion-icon>
+    <span class="list-item-name">Profile</span>
+  </a>
+  </li>
+
+<!--code for the top left logo-->
+<img src="images/logo.png" alt="Logo">
+    
+
 </body>
 
 
