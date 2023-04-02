@@ -106,3 +106,4 @@ class Card{
                    
     }
 }
+alert("For an opportunity to match, swipe left if you don't like and right if you do!");
