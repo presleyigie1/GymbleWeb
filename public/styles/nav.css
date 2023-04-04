@@ -1,0 +1,81 @@
+title{
+    color: black;
+}
+
+img{
+    width: 200px;
+    position: fixed;
+    top: -40px;
+    left: 20px;
+}
+
+.navbar{
+    border-radius: 50px;
+    background-color: #99ccff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1500px;
+    box-shadow: 0 14px 28px rgba(110, 111, 113, 0.608);
+    overflow: hidden;
+    position: fixed;
+    bottom: 20px;
+}
+
+.list-item{
+    list-style-type: none;
+    flex-basis: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #555;
+    transform: translateY(0);
+    transition: transform 0.5s ease, opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.list-item ion-icon{
+    font-size: 22px;
+}
+
+.list-item-name{
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    transform: translate(0, 50px);
+    transition: transform 0.5s ease, opacity 0.2 ease;
+    opacity: 0;
+}
+
+.list-item.active{
+    color: #5756e6;
+    transform: translateY(-6px);
+}
+
+.list-item.active .list-item-name{
+    transform: translateY(20px);
+    opacity: 1;
+}
+
+@media (max-width: 350px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        max-width: 80px;
+        padding-bottom: 20px;
+    }
+    .list-item{
+        flex-basis: auto;
+    }
+    .list-item.active .list-item-name{
+        transform: translateY(25px);
+    }
+}
+
+/* making sure the link doesnt turn purple after it has been clicked*/
+a:visited { 
+    text-decoration: none; 
+    color: #555; 
+}
