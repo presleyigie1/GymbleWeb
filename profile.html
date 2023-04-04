@@ -1,51 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible"
-        content="IE=edge">
-        <meta name="viewport" content=""width=device-width,
-        initial-scale="1.0">
-        <title>Test</title>
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="./nav.css">
-        <!--Title bar icon-->
-        <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="Style.css">
+    <!--Title bar icon-->
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
 </head>
 <body>
+    <div class="main-container">
+        <img src="images/user.jpg" alt="user photo" class="user">
+        <h1 class="userName"> Emma Kelly, 20</h1>
+        
+        <!--<h4 class="job-title">Computing Student</h4>-->
+        <ul class="social">
+            <div class="followers">
+                <li class="list-item">
+                    <span class="title">Posts</span>
+                </li>
+                <li class="list-item">
+                    <span class="num"><br>4</span>
+                </li>
+            </div>
+            <div class="followers">
+                <li class="list-item">
+                    <span class="title">Matches</span>
+                </li>
+                <li class="list-item">
+                    <span class="num">13</span>
+                </li>
+            </div>
+            <div class="followers">
+                <li class="list-item">
+                    <span class="title">Followers</span>
+                </li>
+                <li class="list-item">
+                    <span class="num">130</span>
+                </li>
+            </div>
+        </ul>
 
+        <div class="buttons">
+            <button class="Add" href="add.html">
+                <ion-icon name="add-outline"></ion-icon>
+            </button>
+            <button class="Add" href="settings.html">
+                <ion-icon name="settings-outline"></ion-icon>
+            </button>
+            <button class="Add" href="preview.html">
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </button>
+            <button class="Add" href="gymswap.html">
+                <ion-icon name="barbell-outline"></ion-icon>
+            </button>
+        </div>
+    </div>
+
+
+    
     <!-- code for the bottom navbar -->
-<div class="navbar">
-    <li class="list-item">
-      <a href="Swipe.html">
-        <ion-icon name="copy-outline"></ion-icon>
-      <span class="list-item-name">Home</span>
-    </a>
-    </li>
-    <li class="list-item">
-      <a href="messages.html">
-        <ion-icon name="chatbubble-outline"></ion-icon>
-      <span class="list-item-name">Messages</span>
-    </a>
-    </li>
-    <li class="list-item">
-      <a href="search.html">
-        <ion-icon name="search-outline"></ion-icon>
-      <span class="list-item-name">Search</span>
-    </a>
-    </li>
-    <li class="list-item">
-      <a href="profile.html">
-        <ion-icon name="person-outline"></ion-icon>
-      <span class="list-item-name">Profile</span>
-    </a>
-    </li>
+ <div class="navbar">
+        <li class="list-item">
+            <a href="Swipe.html">
+                <ion-icon name="copy-outline"></ion-icon>
+                <span class="list-item-name">Home</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="messages.html">
+                <ion-icon name="chatbubble-outline"></ion-icon>
+                <span class="list-item-name">Messages</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="search.html">
+                <ion-icon name="search-outline"></ion-icon>
+                <span class="list-item-name">Search</span>
+            </a>
+        </li>
+        <li class="list-item">
+            <a href="profile.html">
+                <ion-icon name="person-outline"></ion-icon>
+                <span class="list-item-name">Profile</span>
+            </a>
+        </li>
+    </div>
   
   <!--code for the top left logo-->
-  <img src="images/logo.png" alt="Logo">
+  <img  class="topLeft" src="images/logo.png" alt="Logo">
 
   <!--importing ion icons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
+
+      
+  
 </body>
 </html>
