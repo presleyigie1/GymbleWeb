@@ -15,7 +15,7 @@ img{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 650px;
+    max-width: 1500px;
     box-shadow: 0 14px 28px rgba(110, 111, 113, 0.608);
     overflow: hidden;
     position: fixed;
