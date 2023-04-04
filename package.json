@@ -1,0 +1,24 @@
+{
+  "name": "gymbleweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "card.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/presleyigie1/GymbleWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/presleyigie1/GymbleWeb/issues"
+  },
+  "homepage": "https://github.com/presleyigie1/GymbleWeb#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1"
+  }
+}

@@ -13,6 +13,50 @@
 </head>
 <body>
 
+  <div class="app">
+    <div class="screen join-screen ">
+       <div class="form">
+         <h2>Join Chatroom</h2>
+         <div class="form-input">
+           <label>Username</label>
+           <input type="text" id="username">
+         </div>
+         <div class="form-input">
+             <button id="join-user">Join</button>
+           
+         </div>
+       </div>
+    </div>
+    <div class="screen chat-screen active">
+         <div class="header">
+              <div class="logo">Messages</div>
+              <button id="exit-chat">Exit</button>
+         </div>
+         <div class="messages">
+              <!--Dummy Messages-->
+              <div class="message my-message">
+                <div>
+                  <div class="name">You</div>
+                  <div class="text">Hi</div>
+                </div>
+              </div>
+              <div class="update">
+                Abc is joined the conversation
+              </div>
+              <div class="message other-message">
+                <div>
+                  <div class="name">Abc</div>
+                  <div class="text">Hi</div>
+                </div>
+              </div>
+         </div>
+         <div class="typebox">
+             <input type="text" id="message-input">
+             <button id="send-message">Send</button>
+         </div>
+    </div>
+</div>
+
     <!-- code for the bottom navbar -->
 <div class="navbar">
     <li class="list-item">
@@ -39,6 +83,11 @@
       <span class="list-item-name">Profile</span>
     </a>
     </li>
+
+    
+
+    <script type= "text/javascript" src="socket.io.js"></script>
+    <script type="text/javascript" src="code.js"></script>
   
   <!--code for the top left logo-->
   <img src="images/logo.png" alt="Logo">
