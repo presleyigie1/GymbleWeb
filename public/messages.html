@@ -1,99 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="" width=device-width, initial-scale="1.0">
-    <title>Test</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./nav.css">
-    <!--Title bar icon-->
-    <link rel="icon" type="image/x-icon" href="images/icon.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="" width=device-width, initial-scale="1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="/GymbleWeb/public/styles/style.css">
+  <link rel="stylesheet" href="/GymbleWeb/public/styles/nav.css">
+  <!--Title bar icon-->
+  <link rel="icon" type="image/x-icon" href="/GymbleWeb/public/images/icon.png">
 
 </head>
+
 <body>
 
   <div class="app">
-    <div class="screen join-screen ">
-       <div class="form">
-         <h2>Join Chatroom</h2>
-         <div class="form-input">
-           <label>Username</label>
-           <input type="text" id="username">
-         </div>
-         <div class="form-input">
-             <button id="join-user">Join</button>
-           
-         </div>
-       </div>
+    <div class="screen join-screen active">
+      <div class="form">
+        <h2>Join Chatroom</h2>
+        <div class="form-input">
+          <label>Username</label>
+          <input type="text" id="username">
+        </div>
+        <div class="form-input">
+          <button id="join-user">Join</button>
+        </div>
+      </div>
     </div>
-    <div class="screen chat-screen active">
-         <div class="header">
-              <div class="logo">Messages</div>
-              <button id="exit-chat">Exit</button>
-         </div>
-         <div class="messages">
-              <!--Dummy Messages-->
-              <div class="message my-message">
-                <div>
-                  <div class="name">You</div>
-                  <div class="text">Hi</div>
-                </div>
-              </div>
-              <div class="update">
-                Abc is joined the conversation
-              </div>
-              <div class="message other-message">
-                <div>
-                  <div class="name">Abc</div>
-                  <div class="text">Hi</div>
-                </div>
-              </div>
-         </div>
-         <div class="typebox">
-             <input type="text" id="message-input">
-             <button id="send-message">Send</button>
-         </div>
+    <div class="screen chat-screen ">
+      <div class="header">
+        <div class="logo">Messages</div>
+        <button id="exit-chat">Exit</button>
+      </div>
+      <div class="messages">
+      </div>
+      <div class="typebox">
+        <input type="text" id="message-input">
+        <button id="send-message">Send</button>
+      </div>
     </div>
-</div>
+  </div>
 
-    <!-- code for the bottom navbar -->
-<div class="navbar">
+  <!-- code for the bottom navbar -->
+  <div class="navbar">
     <li class="list-item">
-      <a href="Swipe.html">
+      <a href="/GymbleWeb/public/Swipe.html">
         <ion-icon name="copy-outline"></ion-icon>
-      <span class="list-item-name">Home</span>
-    </a>
+        <span class="list-item-name">Home</span>
+      </a>
     </li>
     <li class="list-item">
-      <a href="messages.html">
+      <a href="/GymbleWeb/public/messages.html">
         <ion-icon name="chatbubble-outline"></ion-icon>
-      <span class="list-item-name">Messages</span>
-    </a>
+        <span class="list-item-name">Messages</span>
+      </a>
     </li>
     <li class="list-item">
-      <a href="search.html">
+      <a href="/GymbleWeb/public/search.html">
         <ion-icon name="search-outline"></ion-icon>
-      <span class="list-item-name">Search</span>
-    </a>
+        <span class="list-item-name">Search</span>
+      </a>
     </li>
     <li class="list-item">
-      <a href="profile.html">
+      <a href="/GymbleWeb/public/profile/profile.html">
         <ion-icon name="person-outline"></ion-icon>
-      <span class="list-item-name">Profile</span>
-    </a>
+        <span class="list-item-name">Profile</span>
+      </a>
     </li>
 
-    
 
-    <script type= "text/javascript" src="socket.io.js"></script>
-    <script type="text/javascript" src="code.js"></script>
-  
-  <!--code for the top left logo-->
-  <img src="images/logo.png" alt="Logo">
 
-  <!-- Importinhg ion icon -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script type="text/javascript" src="/GymbleWeb/node_modules/socket.io/client-dist/socket.io.js"></script>
+    <script type="text/javascript" src="js/code.js"></script>
+
+
+    <!--code for the top left logo-->
+    <img src="images/logo.png" alt="Logo">
+
+    <!-- Importinhg ion icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
 </body>
+
 </html>
