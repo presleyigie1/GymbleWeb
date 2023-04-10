@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,16 @@
     <link rel="stylesheet" href="/GymbleWeb/public/styles/profile.css">
     <link rel="stylesheet" href="/GymbleWeb/public/styles/nav.css">
     <link rel="stylesheet" href="/GymbleWeb/public/styles/style.css">
+    <!--link rel="stylesheet" href="/GymbleWeb/Emmas test page/emmatest.css"-->
     <!--Title bar icon-->
     <link rel="icon" type="image/x-icon" href="/GymbleWeb/public/images/Icon.png">
 </head>
+
 <body>
     <div class="main-container">
         <img src="/GymbleWeb/public/images/user.jpg" alt="user photo" class="user">
         <h1 class="userName"> Emma Kelly, 20</h1>
-        
+
         <!--<h4 class="job-title">Computing Student</h4>-->
         <ul class="social">
             <div class="followers">
@@ -44,59 +47,123 @@
             </div>
         </ul>
 
-        <div class="buttons">
-            <a class="Add" href="/GymbleWeb/public/profile/add.html">
-                <ion-icon name="add-outline"></ion-icon>
-            </a>
-            <a class="Add" href="/GymbleWeb/public/profile/settings.html">
-                <ion-icon name="settings-outline"></ion-icon>
-            </a>
-            <a class="Add" href="/GymbleWeb/public/profile/preview.html">
-                <ion-icon name="person-circle-outline"></ion-icon>
-            </a>
-            <a class="Add" href="/GymbleWeb/public/profile/gymswap.html">
-                <ion-icon name="barbell-outline"></ion-icon>
-            </a>
+
+        <!-- code for the add, gym swap, settings and preview buttons-->
+        <div class="wrapper">
+            <div class="button">
+                <a class="link" href="/GymbleWeb/public/profile/add.html">
+                    <div class="icon">
+                        <ion-icon name="add-outline"></ion-icon>
+                    </div>
+                    <span>Add</span>
+                </a>
+            </div>
+            <div class="button">
+                <a class="link" href="/GymbleWeb/public/profile/gymswap.html">
+                    <div class="icon">
+                        <ion-icon name="barbell-outline"></ion-icon>
+                    </div>
+                    <span>Gym Swap</span>
+                </a>
+            </div>
+            <div class="button">
+                <a class="link" href="/GymbleWeb/public/profile/preview.html">
+                    <div class="icon">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </div>
+                    <span>Preview</span>
+                </a>
+            </div>
+            <div class="button">
+                <a class="link" href="/GymbleWeb/public/profile/settings.html">
+                    <div class="icon">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </div>
+                    <span>Settings</span>
+                </a>
+            </div>
         </div>
+
+        <!--<div class="buttons.hover">
+        <a class="Add" href="/GymbleWeb/public/profile/add.html">
+            <p>Add a post</p>
+        </a>
+        <a class="Add" href="/GymbleWeb/public/profile/settings.html">
+            <p>Settings</p>
+        </a>
+        <a class="Add" href="/GymbleWeb/public/profile/preview.html">
+            <p>Preview Profile</p>
+        </a>
+        <a class="Add" href="/GymbleWeb/public/profile/gymswap.html">
+            <p>Gym Swap</p>
+        </a>
+    </div>-->
+
+        <!--div class="wrapper">
+        <a class="button" href="/GymbleWeb/public/profile/add.html">
+            <div class="icon">
+                <ion-icon name="add-outline"></ion-icon>
+            </div>
+            <span>Add</span>
+        </a>
+        <a class="button" href="/GymbleWeb/public/profile/gymswap.html">
+            <div class="icon">
+                <ion-icon name="barbell-outline"></ion-icon>
+            </div>
+            <span>Gym Swap</span>
+        </a>
+        <a class="button" href="/GymbleWeb/public/profile/preview.html">
+            <div class="icon">
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </div>
+            <span>Preview</span>
+        </a>
+        <a class="button" href="/GymbleWeb/public/profile/settings.html">
+            <div class="icon">
+                <ion-icon name="settings-outline"></ion-icon>
+            </div>
+            <span>Settings</span>
+        </a>
     </div>
+</div>
+</div-->
 
 
 
-  <!-- code for the bottom navbar -->
-  <div class="navbar">
-    <li class="list-item">
-      <a href="/GymbleWeb/public/Swipe.html">
-        <ion-icon name="copy-outline"></ion-icon>
-        <span class="list-item-name">Home</span>
-      </a>
-    </li>
-    <li class="list-item">
-      <a href="/GymbleWeb/public/messages.html">
-        <ion-icon name="chatbubble-outline"></ion-icon>
-        <span class="list-item-name">Messages</span>
-      </a>
-    </li>
-    <li class="list-item">
-      <a href="/GymbleWeb/public/search.html">
-        <ion-icon name="search-outline"></ion-icon>
-        <span class="list-item-name">Search</span>
-      </a>
-    </li>
-    <li class="list-item">
-      <a href="/GymbleWeb/public/profile/profile.html">
-        <ion-icon name="person-outline"></ion-icon>
-        <span class="list-item-name">Profile</span>
-      </a>
-    </li>
-  
-  <!--code for the top left logo-->
-  <img  class="topLeft" src="images/logo.png" alt="Logo">
+        <!-- code for the bottom navbar -->
+        <div class="navbar">
+            <li class="list-item">
+                <a href="/GymbleWeb/public/Swipe.html">
+                    <ion-icon name="copy-outline"></ion-icon>
+                    <span class="list-item-name">Home</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="/GymbleWeb/public/messages.html">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <span class="list-item-name">Messages</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="/GymbleWeb/public/search.html">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <span class="list-item-name">Search</span>
+                </a>
+            </li>
+            <li class="list-item">
+                <a href="/GymbleWeb/public/profile/profile.html">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <span class="list-item-name">Profile</span>
+                </a>
+            </li>
+        </div>
+        <!--code for the top left logo-->
+        <img class="topLeft" src="images/logo.png" alt="Logo">
 
-  <!--importing ion icons -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <!--importing ion icons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
-
-      
-  
+    </div>
 </body>
+
 </html>

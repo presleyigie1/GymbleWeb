@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Add Post</title>
-        <link rel="stylesheet" href="/GymbleWeb/styles/add.css">
-        <link rel="stylesheet" href="/GymbleWeb/styles/style.css">
-        <!--Title bar icon-->
-        <link rel="icon" type="image/x-icon" href="/GymbleWeb/images/Icon.png">
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Post</title>
+    <link rel="stylesheet" href="/GymbleWeb/public/styles/add.css">
+    <link rel="stylesheet" href="/GymbleWeb/public/styles/style.css">
+    <script src="/GymbleWeb/public/js/add.js"></script>
+    <!--Title bar icon-->
+    <link rel="icon" type="image/x-icon" href="/GymbleWeb/public/images/Icon.png">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1 class="Title">Add a Post</h1>`
+        <div class="drop-container">
+            <div class="drop">
+                <div class="icon"> 
+                <ion-icon name="images-outline"></ion-icon>
+                </div>
+                <span class="text">
+                    Drag and drop your documents, photos, and videos here.
+                </span>
+                <div class="or-con">
+                    <span class="line"></span>
+                    <span class="or">OR</span>
+                    <span class="line"></span>
+                </div>
+                <label for="file-upload">Browse Files</label>
+                <input type="file" id="file-upload" class="file-input" multiple />
+            </div>
+            <div class="progress"></div>
+        </div>
+        <a class="backButton" href="profile.html">
+            <ion-icon name="arrow-back-circle-outline"></ion-icon>
+        </a>
+
+    </div>
 
 
-    </body>
+
+
+
+
+
+
+
+</body>
 </html>
