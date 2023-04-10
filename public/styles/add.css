@@ -111,14 +111,33 @@ body{
     color: #443f46;
 }
 
-.backButton{
-    font-size: 60px;
-    color: #0f63ff;
-    margin-left: 120px;
-    padding: 1.5rem;
-    width:30px;
-    display:inline-block;
-    border-radius: 20px;
-    box-shadow: 0 0 40px 15px rgba(0,0,0,0.2);
 
+/*back button at the top left of the page*/
+.backButton{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    background: #f3f0ff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    margin-left: 0px;
+}
+
+.backButton .icon{
+    display: inline-block;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 70px;
+}
+
+/* making sure the link doesnt turn purple after it has been clicked*/
+a:visited { 
+    text-decoration: none; 
+    color: #0f63ff; 
 }

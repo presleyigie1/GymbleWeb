@@ -6,20 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Post</title>
+    <!--links to the stylesheets-->
     <link rel="stylesheet" href="/GymbleWeb/public/styles/add.css">
     <link rel="stylesheet" href="/GymbleWeb/public/styles/style.css">
+    <!--link to the javascript-->
     <script src="/GymbleWeb/public/js/add.js"></script>
     <!--Title bar icon-->
     <link rel="icon" type="image/x-icon" href="/GymbleWeb/public/images/Icon.png">
+    <!--importing ion icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 <body>
     <div class="main-container">
-        <h1 class="Title">Add a Post</h1>`
+        <!-- Back button on the top left of the page-->
+        <a class="backButton" href="profile.html">
+            <div class="icon">
+                <ion-icon name="arrow-back-circle-outline"></ion-icon>
+            </div>
+        </a>
+        <!--heading-->
+        <h1 class="Title">Add a Post</h1>
+
+        <!--Drag and drop box-->
         <div class="drop-container">
             <div class="drop">
-                <div class="icon"> 
-                <ion-icon name="images-outline"></ion-icon>
+                <div class="icon">
+                    <ion-icon name="images-outline"></ion-icon>
                 </div>
                 <span class="text">
                     Drag and drop your documents, photos, and videos here.
@@ -34,9 +47,11 @@
             </div>
             <div class="progress"></div>
         </div>
-        <a class="backButton" href="profile.html">
-            <ion-icon name="arrow-back-circle-outline"></ion-icon>
-        </a>
+        
+        <!--description box-->
+        <p> Add a description </p>
+
+
 
     </div>
 
@@ -49,4 +64,5 @@
 
 
 </body>
+
 </html>
