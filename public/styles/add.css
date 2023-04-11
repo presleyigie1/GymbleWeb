@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+.Title{
+    margin-left: 250px;
+    margin-bottom: 50px;
+}
+
+html{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+  }
+
+body{
+    padding:10px;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+}
+
+.main-container{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 50%;
+    height: 1000px;
+    margin: auto;
+}
+
+.drop-container{
+    background: #fff;
+    margin-left: 120px;
+    padding: 1.5rem;
+    width: 450px;
+    display:inline-block;
+    border-radius: 20px;
+    box-shadow: 0 0 40px 15px rgba(0,0,0,0.2);
+}
+
+.drop{
+    border-radius: 10px;
+    border: 3px dashed #aaaaaa;
+    display: grid;
+    width: 100%;
+    place-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    place-items: center;
+}
+
+.active{
+    border: 3px solid #4b4b4b;
+    background: #cccfff;
+}
+
+.drop .icon{
+    font-size: 60px;
+    color: #0f63ff;
+}
+
+.drop .text{
+    text-align: center;
+    font-weight: 500;
+    color: #443f46;
+    margin-top: 1rem;
+}
+
+.progress{
+    background: #0f63ff;
+    width: 0%;
+    height: 20px;
+    display:none;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.drop label{
+    background: #0f63ff;
+    padding: 0.7rem 1.8rem;
+    border-radius:5px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.file-input{
+    display:none;
+}
+
+.line{
+    width: 80px;
+    height: 1px;
+    background: #949494;
+}
+
+.or-con{
+    display:flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.or{
+    margin: 0 1rem;
+    font-weight: 500;
+    color: #443f46;
+}
+
+
+/*back button at the top left of the page*/
+.backButton{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    background: #f3f0ff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    margin-left: 0px;
+}
+
+.backButton .icon{
+    display: inline-block;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 70px;
+}
+
+/* making sure the link doesnt turn purple after it has been clicked*/
+a:visited { 
+    text-decoration: none; 
+    color: #0f63ff; 
+}
