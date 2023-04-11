@@ -8,6 +8,7 @@ window.onload = () =>{
 }
 
 window.onload = () => {
+    
     if(!sessionStorage.fname){
         location.href = "/login"
     }
@@ -23,6 +24,8 @@ logOut.onclick = () =>{
     sessionStorage.clear()
     location.reload()
 }
+
+
 class userProfile {
     constructor(name, posts, matches, followers) {
         this.name = name;
