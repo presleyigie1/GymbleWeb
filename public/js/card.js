@@ -1,4 +1,5 @@
 class Card{
+
     constructor({
         imageUrl,
         onDismiss,
@@ -105,5 +106,13 @@ class Card{
              }
                    
     }
+
 }
-alert("For an opportunity to match, swipe left if you don't like and right if you do!");
+
+function helpFunction() {    
+    alert("Swipe right to like the user, swipe left to skip. If you match you can chat in the messages page.");
+};
+
+  //  alert("For an opportunity to match, swipe left if you don't like and right if you do!");
+
+

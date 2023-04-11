@@ -6,8 +6,8 @@
 }
 
 .Title{
-    margin-left: 250px;
-    margin-bottom: 50px;
+    margin-left: 220px;
+    margin-bottom: 30px;
 }
 
 html{
@@ -141,3 +141,49 @@ a:visited {
     text-decoration: none; 
     color: #0f63ff; 
 }
+
+/*heading*/
+h1{
+    margin-left:auto;
+    font-size: 50px;
+    color: #0f63ff;
+}
+
+p{
+    margin-left:auto;
+    font-size: 30px;
+    color: #0f63ff;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*description box*/
+.textArea{
+    background: #fff;
+    margin-left: 120px;
+    padding: 1.5rem;
+    width: 450px;
+    display:inline-block;
+    border-radius: 20px;
+    box-shadow: 0 0 40px 15px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    height: 100px;
+}
+
+/*post button*/
+button.post-btn {
+    padding: 20px 100px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color:#fff;
+    cursor: pointer; 
+    margin-left: 230px; 
+  }
+  
+  button.post-btn {
+    background-color: #0f63ff;
+    border-radius: 5px;
+  }

@@ -36,7 +36,9 @@ a:visited {
   }
 
 h1{
-    top:0;
+    margin-left: 60px;
+    font-size: 50px;
+    color: #0f63ff;
 }
   
   body {
