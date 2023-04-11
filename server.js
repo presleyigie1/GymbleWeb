@@ -132,24 +132,26 @@ app.listen(3000, (req, res) => {
 
 
 //k
-const server = require("http").createServer(app);
 
-const io = require("socket.io")(server);
+const http = require("http").Server(app);
+const io = require("socket.io")(http);
 
-app.use(express.static(path.join(__dirname+"/public")));
+app.use(express.static(path.join(__dirname, "/public")));
 
+io.on("connection", function(socket) {
+  //joining the conversation function
+  socket.on("newuser", function(username) {
+    socket.broadcast.emit("update", username + "joined the conversation");
+  });
+  //leaving the conversation function
+  socket.on("exituser", function(username) {
+    socket.broadcast.emit("update", username + "left the conversation");
+  });
+  socket.on("chat", function(message) {
+    socket.broadcast.emit("chat", message);
+  });
+});
 
-io.on("connection", function(socket){
-    socket.on("newuser",function(username){
-        socket.broadcast.emit("update", username + " joined the conversation")
-    })
-    socket.on("exitUser",function(username){
-        socket.broadcast.emit("update", username + " left the conversation")
-    })
-    socket.on("chat",function(username){
-        socket.broadcast.emit("update", chat + message)
-    })
-    
-})
-
-server.listen(5000);
+http.listen(3000, function() {
+  console.log("listening on *:3000");
+});
