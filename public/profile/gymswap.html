@@ -34,10 +34,26 @@
                             <input autocomplete="off" type="text" id="firstName" name="first-name" />
                         </div>
                         <div class="form-group">
-                            <label for="lastName">Gym Swapper Username</label>
-                            <input autocomplete="off" type="text" id="lastName" name="last-name" />
+                            <label for="gymName">Your current Gym</label>
+                            <input autocomplete="off" type="text" id="gymName" name="gym-name" />
                         </div>
-                        <button type="submit" class="submit-btn">Submit</button>
+                        <div class="form-group">
+                            <label for="gymLocation">Your current Gym Location</label>
+                            <input autocomplete="off" type="text" id="gymLocation" name="gym-location" />
+                        </div>
+                        <div class="form-group">
+                            <label for="swapperName">Gym Swapper Username</label>
+                            <input autocomplete="off" type="text" id="swapperName" name="swapper-name" />
+                        </div>
+                        <div class="form-group">
+                            <label for="swapperGym">Swapping Gym Name</label>
+                            <input autocomplete="off" type="text" id="swapperGym" name="swapper-gym" />
+                        </div>
+                        <div class="form-group">
+                            <label for="swapperLocation">Swapping Gym Location</label>
+                            <input autocomplete="off" type="text" id="swapperLocation" name="swapper-location" />
+                        </div>
+                        <button type="submit" class="submit-btn" onclick="submitFunction()">Submit</button>
                     </div>
                 </form>
             </div>

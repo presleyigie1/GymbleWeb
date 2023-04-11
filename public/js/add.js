@@ -43,3 +43,8 @@ function upload() {
         }
     }, 100);
 }
+
+//post button
+function postFunction(){
+    alert("You have posted");
+}
