@@ -1,4 +1,5 @@
 .search-bar{
+    /* search bar styling */
     margin-bottom: 350px;
     margin-left: 900px;
     width: 100%;
@@ -12,6 +13,7 @@
 }
 
 .search-bar input{
+    /* styling for the search input*/
     background: transparent;
     flex: 1;
     border: 0;
@@ -22,5 +24,6 @@
 }
 
 ::placeholder{
+    /* Placeholder text "Search for user" */
     color: rgb(74, 81, 83);
 }
