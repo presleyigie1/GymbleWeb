@@ -6,27 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <!--connecting the CSS pages-->
     <link rel="stylesheet" href="/GymbleWeb/public/styles/profile.css">
     <link rel="stylesheet" href="/GymbleWeb/public/styles/nav.css">
     <link rel="stylesheet" href="/GymbleWeb/public/styles/style.css">
-    <!--link rel="stylesheet" href="/GymbleWeb/Emmas test page/emmatest.css"-->
+    <!--connecting the javascript-->
+    <script src="/GymbleWeb/public/js/profileUser.js"></script>
     <!--Title bar icon-->
     <link rel="icon" type="image/x-icon" href="/GymbleWeb/public/images/Icon.png">
 </head>
 
 <body>
     <div class="main-container">
+        <!--user profile picture-->
         <img src="/GymbleWeb/public/images/user.jpg" alt="user photo" class="user">
-        <h1 class="userName"> Emma Kelly, 20</h1>
+        <h1 class="userName" id="userName"></h1>
 
-        <!--<h4 class="job-title">Computing Student</h4>-->
+        <!--Posts, matches and followers buttons-->
         <ul class="social">
             <div class="followers">
                 <li class="list-item">
                     <span class="title">Posts</span>
                 </li>
                 <li class="list-item">
-                    <span class="num"><br>4</span>
+                    <span class="num" id="posts"><br></span>
                 </li>
             </div>
             <div class="followers">
@@ -34,7 +37,7 @@
                     <span class="title">Matches</span>
                 </li>
                 <li class="list-item">
-                    <span class="num">13</span>
+                    <span class="num" id="matches"></span>
                 </li>
             </div>
             <div class="followers">
@@ -42,7 +45,7 @@
                     <span class="title">Followers</span>
                 </li>
                 <li class="list-item">
-                    <span class="num">130</span>
+                    <span class="num" id="followers"></span>
                 </li>
             </div>
         </ul>
@@ -84,52 +87,6 @@
             </div>
         </div>
 
-        <!--<div class="buttons.hover">
-        <a class="Add" href="/GymbleWeb/public/profile/add.html">
-            <p>Add a post</p>
-        </a>
-        <a class="Add" href="/GymbleWeb/public/profile/settings.html">
-            <p>Settings</p>
-        </a>
-        <a class="Add" href="/GymbleWeb/public/profile/preview.html">
-            <p>Preview Profile</p>
-        </a>
-        <a class="Add" href="/GymbleWeb/public/profile/gymswap.html">
-            <p>Gym Swap</p>
-        </a>
-    </div>-->
-
-        <!--div class="wrapper">
-        <a class="button" href="/GymbleWeb/public/profile/add.html">
-            <div class="icon">
-                <ion-icon name="add-outline"></ion-icon>
-            </div>
-            <span>Add</span>
-        </a>
-        <a class="button" href="/GymbleWeb/public/profile/gymswap.html">
-            <div class="icon">
-                <ion-icon name="barbell-outline"></ion-icon>
-            </div>
-            <span>Gym Swap</span>
-        </a>
-        <a class="button" href="/GymbleWeb/public/profile/preview.html">
-            <div class="icon">
-                <ion-icon name="person-circle-outline"></ion-icon>
-            </div>
-            <span>Preview</span>
-        </a>
-        <a class="button" href="/GymbleWeb/public/profile/settings.html">
-            <div class="icon">
-                <ion-icon name="settings-outline"></ion-icon>
-            </div>
-            <span>Settings</span>
-        </a>
-    </div>
-</div>
-</div-->
-
-
-
         <!-- code for the bottom navbar -->
         <div class="navbar">
             <li class="list-item">
@@ -158,7 +115,7 @@
             </li>
         </div>
         <!--code for the top left logo-->
-        <img class="topLeft" src="images/logo.png" alt="Logo">
+        <img class="topLeft" src="/GymbleWeb/public/images/logo.png" alt="Logo">
 
         <!--importing ion icons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

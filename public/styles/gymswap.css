@@ -1,0 +1,110 @@
+/*back button at the top left of the page*/
+.backButton{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    background: #f3f0ff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    margin-left: 0px;
+}
+
+.backButton .icon{
+    display: inline-block;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 70px;
+}
+
+
+/* making sure the link doesnt turn purple after it has been clicked*/
+a:visited { 
+    text-decoration: none; 
+    color: #0f63ff; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+h1{
+    top:0;
+}
+  
+  body {
+    font-family: "Montserrat";
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background:linear-gradient(0deg,#0080ff, #e6f5ff);
+  }
+  
+  section {
+    min-height: 100vh;
+    width: 50%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+  }
+  
+  .gymContainer {
+    max-width: 700px;
+    max-height: 700px;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000020;
+    border-radius: 8px;
+    background-color: white;
+  }
+
+  .step {
+    display: none;
+  }
+
+  .step.active {
+    display: block;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .form-group input {
+    width: 100%;
+    border: 1.5px solid rgba(128, 128, 128, 0.418);
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 5px;
+    border-radius: 4px;
+  }
+  
+  button.submit-btn {
+    float: center;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(180, 220, 255);
+    font-family: "Montserrat";
+    font-size: 18px;
+    cursor: pointer; /* text-align: right; */
+  }
+  
+  button.submit-btn {
+    background-color: aquamarine;
+    border-radius: 5px;
+  }

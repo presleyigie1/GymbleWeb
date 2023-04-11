@@ -8,21 +8,13 @@
   margin: 0;
   padding: 0;
   text-align:center;
-  min-height:100vh;
+  min-height:120vh;
+  overflow-x: scroll;
+  background:linear-gradient(to bottom, rgba(30, 29, 29, 0.799),rgba(89, 101, 209, 0.567) 100%);
   
 }
-.overlay{
-  background:linear-gradient(to bottom, rgba(30, 29, 29, 0.799),rgba(89, 101, 209, 0.567) 100%);
-  width:100vw;
-  height: 100vh;
-  position:fixed;
-}
 
 
-.gymble{
-    display: flex;
-    justify-content: center;
-}
 .gymble-logo{
     width:300px;
 }
@@ -45,25 +37,20 @@
 
 .sign-in,.sign-up{
   background-color: white;
-  padding-top: 10px;;
+  padding-top: 5px;;
   border-radius: 30px;
-  margin:60px;
-  height: 200px;
+  margin:40px;
+  height: 245px;
   text-align: center;
 }
 
 .sign-up{
-  height:260px;
+  height:375px;
 }
-.email ,.password{
-  font-size: 20px;
+input {
+  font-size: 18px;
 }
-.exit-icon{
-  float:right;
-  position:relative;
-  left:-20px; 
-  font-size: 30px;
-}
+
 .submit-btn:hover{
   background:linear-gradient(45deg, rgba(41, 30, 30, 0.553),rgba(15, 92, 185, 0.84));
 
@@ -76,13 +63,31 @@
   background:linear-gradient(45deg, rgba(15, 92, 185, 0.84),rgba(41, 30, 30, 0.553));
   padding: 0 20px;
 }
-
+/*
 #signin{
   display: none;
-}
-.exit-icon{
-  cursor: pointer;
-}
-#signup{
+}*/
+
+/*#signup{
   display: none;
+}*/
+
+/*css for the alert message if incorrect for login/sign up form*/
+.alert-msg{
+  background-color: rgb(246, 69, 69);
+  border-top: 1px solid rgb(246, 69, 69);
+  border-bottom-left-radius:10px;
+  border-bottom-left-radius:10px;
+  color:white;
+  text-align: center;
+  transition: 1s;
+  position: absolute;
+  top:-100%;
+  left:50%;
+  transform: translateX(-50%);
+  min-width:150px;
+  max-width:90%;
+  width:auto;
+  height:auto;
+  text-transform:capitalize;
 }
