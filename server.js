@@ -142,12 +142,6 @@ app.listen(3000, (req, res) => {
     console.log("listening on port 3000....... ")
 })
 
-
-
-
-
-
-
 //k
 /*
 /*const http = require("http").Server(app);

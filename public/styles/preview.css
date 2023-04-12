@@ -27,3 +27,27 @@ a:visited {
     text-decoration: none; 
     color: #0f63ff; 
 }
+
+/*profile Picture*/
+.profilePic{
+    margin-top: 70px;
+    margin-left: 230px;
+    width: 500px;
+}
+
+/*white background*/
+.main-container{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 50%;
+    height: 1000px;
+    margin: auto;
+}
+
+/*headings*/
+h1{
+    margin-left:auto;
+    font-size: 50px;
+    color: black;
+}

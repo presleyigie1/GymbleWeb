@@ -7,20 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <!--connecting the CSS pages-->
-    <link rel="stylesheet" href="/GymbleWeb/public/styles/profile.css">
-    <link rel="stylesheet" href="/GymbleWeb/public/styles/nav.css">
-    <link rel="stylesheet" href="/GymbleWeb/public/styles/style.css">
+    <link rel="stylesheet" href="../styles/profile.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <!--connecting the javascript-->
     <script src="/GymbleWeb/public/js/profileUser.js"></script>
+    
     <!--Title bar icon-->
     <link rel="icon" type="image/x-icon" href="/GymbleWeb/public/images/Icon.png">
 </head>
 
 <body>
     <div class="main-container">
+        
+    <div class="user-info">
+        <p class="uName"></p>
+        <button class="logout-btn"> logout</button>
+    </div>
         <!--user profile picture-->
         <img src="/GymbleWeb/public/images/user.jpg" alt="user photo" class="user">
         <h1 class="userName" id="userName"></h1>
+        <h1 class="userName" id="age"></h1>
 
         <!--Posts, matches and followers buttons-->
         <ul class="social">
@@ -54,7 +61,7 @@
         <!-- code for the add, gym swap, settings and preview buttons-->
         <div class="wrapper">
             <div class="button">
-                <a class="link" href="/GymbleWeb/public/profile/add.html">
+                <a class="link" href="/add">
                     <div class="icon">
                         <ion-icon name="add-outline"></ion-icon>
                     </div>
@@ -62,7 +69,7 @@
                 </a>
             </div>
             <div class="button">
-                <a class="link" href="/GymbleWeb/public/profile/gymswap.html">
+                <a class="link" href="/gymswap">
                     <div class="icon">
                         <ion-icon name="barbell-outline"></ion-icon>
                     </div>
@@ -70,19 +77,11 @@
                 </a>
             </div>
             <div class="button">
-                <a class="link" href="/GymbleWeb/public/profile/preview.html">
+                <a class="link" href="/preview">
                     <div class="icon">
                         <ion-icon name="person-circle-outline"></ion-icon>
                     </div>
                     <span>Preview</span>
-                </a>
-            </div>
-            <div class="button">
-                <a class="link" href="/GymbleWeb/public/profile/settings.html">
-                    <div class="icon">
-                        <ion-icon name="settings-outline"></ion-icon>
-                    </div>
-                    <span>Settings</span>
                 </a>
             </div>
         </div>
@@ -90,25 +89,25 @@
         <!-- code for the bottom navbar -->
         <div class="navbar">
             <li class="list-item">
-                <a href="/GymbleWeb/public/Swipe.html">
+                <a href="/swipe">
                     <ion-icon name="copy-outline"></ion-icon>
                     <span class="list-item-name">Home</span>
                 </a>
             </li>
             <li class="list-item">
-                <a href="/GymbleWeb/public/messages.html">
+                <a href="/messages">
                     <ion-icon name="chatbubble-outline"></ion-icon>
                     <span class="list-item-name">Messages</span>
                 </a>
             </li>
             <li class="list-item">
-                <a href="/GymbleWeb/public/search.html">
+                <a href="/search">
                     <ion-icon name="search-outline"></ion-icon>
                     <span class="list-item-name">Search</span>
                 </a>
             </li>
             <li class="list-item">
-                <a href="/GymbleWeb/public/profile/profile.html">
+                <a href="/profile">
                     <ion-icon name="person-outline"></ion-icon>
                     <span class="list-item-name">Profile</span>
                 </a>
@@ -119,6 +118,9 @@
 
         <!--importing ion icons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+        <!-- link user.js-->
+        <script src="../js/user.js"></script>
 
     </div>
 </body>

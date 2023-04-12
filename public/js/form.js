@@ -99,16 +99,7 @@ const validateData = (data) =>{
         sessionStorage.age = data.age
         sessionStorage.name = data.email
         location.href = "/swipe";
+
     }
 }
 
-const alertBox = (data) =>{
-    const alertContainer = document.querySelector('.alert-box')
-    const alertMsg = document.querySelector(".alert-msg")
-    alertMsg.innerHTML = data 
-
-    alertContainer.style.top = "5%"
-    setTimeout(() =>{
-        alertContainer.style.top = ''
-    },5000)
-}
