@@ -1,6 +1,5 @@
 //adds the name of the user at top right of the screen next to the log out button
 const uName = document.querySelector(".uName")
-const userName = docuent.querySelector(".userName")
 
 window.onload = () =>{
     if(sessionStorage.name){
@@ -26,5 +25,3 @@ logOut.onclick = () =>{
     location.reload()
 }
 
-
-userName.innerHTML = `Hi ${sessionStorage.fname}` 

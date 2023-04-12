@@ -9,20 +9,8 @@
 
 
 //const currentProfile = new userProfile("Emma", 6, 10, 23);//change the name to pull from the database
-const userName = document.querySelector(".userName");
 //after the window loads, the function will run 
-//the function would not work without this, as the js was called before the HTML was loaded 
-window.onload = () => { 
-
-    if(!sessionStorage.fname){
-        location.href = "/login"
-    }
-    else{
-        userName.innerHTML = `${sessionStorage.fname}`;
-    }
-
-   
-};
+//the function would not work without this, as the js was called before the HTML was loaded
 
 //emma connecting the profile page to the profile page 
 
