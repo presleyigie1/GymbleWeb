@@ -103,13 +103,3 @@ const validateData = (data) =>{
     }
 }
 
-const alertBox = (data) =>{
-    const alertContainer = document.querySelector('.alert-box')
-    const alertMsg = document.querySelector(".alert-msg")
-    alertMsg.innerHTML = data 
-
-    alertContainer.style.top = "5%"
-    setTimeout(() =>{
-        alertContainer.style.top = ''
-    },5000)
-}

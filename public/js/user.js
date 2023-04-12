@@ -3,7 +3,7 @@ const uName = document.querySelector(".uName")
 const userName = document.querySelector(".userName")
 
 window.onload = () =>{
-    if(sessionStorage.name){
+    if(sessionStorage.fname){
         location.href = "/swipe"
     }
 }
@@ -15,7 +15,7 @@ window.onload = () => {
     }
     else{
         uName.innerHTML = `Hi ${sessionStorage.fname}` 
-        userName.innerHTML = `${sessionStorage.fname}` + ", " + `${sessionStorage.age}`  
+        userName.innerHTML = `${sessionStorage.fname}` 
     }
 }
 
@@ -26,4 +26,5 @@ logOut.onclick = () =>{
     sessionStorage.clear()
     location.reload()
 }
+
 
