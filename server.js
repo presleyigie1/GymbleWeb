@@ -44,7 +44,7 @@ app.get("/swipe", (req, res) =>{
     res.sendFile(path.join(initialPath, "swipe.html"))
 })
 app.get("/search", (req, res) =>{
-    res.sendFile(path.join(initialPath, "searcg.html"))
+    res.sendFile(path.join(initialPath, "search.html"))
 })
 
 app.get("/messages", (req, res) =>{
@@ -119,6 +119,22 @@ app.post('/login-user',(req,res) =>{
             res.json("email or password is incorrect")
         }
     })
+})
+
+app.get('/users', async (req, res) =>{
+    const searchName = req.query.fname
+    const query = {
+        text: 'SELECT * FROM USERS WHERE fname ILIKE $!',
+        values: [`%${searchName}%`],
+    }
+    try {
+        const { rows } = await db.query(query)
+        res.json(rows)
+    }
+    catch (err){
+        console.error(err)
+        res.status(500).send('Error querying database')
+    }
 })
 
 
