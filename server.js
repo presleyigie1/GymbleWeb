@@ -12,6 +12,7 @@ const db = knex({
     //client is called pg because we are using the postgres connection (psql)
     client: "pg",
     connection:{
+        //host: "127.0.0.1",
         host: "127.0.0.1",
         user:"postgres",
         password: "gymble15",
@@ -133,7 +134,7 @@ app.listen(3000, (req, res) => {
 
 //k
 
-const http = require("http").Server(app);
+/*const http = require("http").Server(app);
 const io = require("socket.io")(http);
 
 app.use(express.static(path.join(__dirname, "/public")));
@@ -152,6 +153,4 @@ io.on("connection", function(socket) {
   });
 });
 
-http.listen(3000, function() {
-  console.log("listening on *:3000");
-});
+Server.listen(5000)*/
