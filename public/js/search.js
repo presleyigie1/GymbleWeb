@@ -1,4 +1,5 @@
 async function searchName() {
+    // code to get names
     const searchName = document.getElementById("searchName").value;
     const res = await fetch(`/users?fname=${searchName}`);
     const data = await res.json();
