@@ -99,6 +99,7 @@ const validateData = (data) =>{
         sessionStorage.age = data.age
         sessionStorage.name = data.email
         location.href = "/swipe";
+
     }
 }
 

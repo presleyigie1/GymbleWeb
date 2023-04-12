@@ -44,7 +44,7 @@ app.get("/swipe", (req, res) =>{
     res.sendFile(path.join(initialPath, "swipe.html"))
 })
 app.get("/search", (req, res) =>{
-    res.sendFile(path.join(initialPath, "searcg.html"))
+    res.sendFile(path.join(initialPath, "search.html"))
 })
 
 app.get("/messages", (req, res) =>{
