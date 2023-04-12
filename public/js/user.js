@@ -3,14 +3,14 @@ const uName = document.querySelector(".uName")
 const userName = document.querySelector(".userName")
 
 window.onload = () =>{
-    if(sessionStorage.fname){
+    if(sessionStorage.name){
         location.href = "/swipe"
     }
 }
 
 window.onload = () => {
     
-    if(!sessionStorage.fname || !sessionStorage.age){
+    if(!sessionStorage.fname){
         location.href = "/login"
     }
     else{
