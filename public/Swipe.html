@@ -8,6 +8,7 @@
   <title>Swipe to match</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/preloader.css">
 
   <!--Title bar icon-->
   <link rel="icon" type="image/x-icon" href="/GymbleWeb/public/images/Icon.png">
@@ -18,6 +19,8 @@
 <!--https://www.youtube.com/watch?v=cUGSEMS8EmI&t=1063s-->
 
 <body>
+      <!-- Code to declare the preloader-->
+      <div id="preloader"></div>
 
   <a class="help" onclick="helpFunction()">
     <div class="icon">
@@ -81,6 +84,13 @@
     <button type="postBtn" onclick=""></button>
     <script src="../js/user.js"></script>
 
+    <script>
+      //This script is to stop the loader from showing once the page has loaded
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function(){
+          loader.style.display = "none";
+      })
+    </script>
 </body>
 
 </html>

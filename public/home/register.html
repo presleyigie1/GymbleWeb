@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/gymble.css">
+    <link rel="stylesheet" href="styles/preloader.css">
     <title>Gymble | Register</title>
 </head>
 <body>
+     <!-- Code to declare the preloader-->
+     <div id="preloader"></div>
+
     <div class = "overlay">
         <div class="gymble">
         <img class="gymble-logo" src="../images/logo.png" alt="Gymble logo">
@@ -43,5 +47,12 @@
     <script src="../js/form.js"></script>
     <script src="../js/user.js"></script>
     
+        <script>
+        //This script is to stop the loader from showing once the page has loaded
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+      </script>
 </body>
 </html>
