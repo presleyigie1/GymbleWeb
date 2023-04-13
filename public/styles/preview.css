@@ -29,10 +29,13 @@ a:visited {
 }
 
 /*profile Picture*/
-.profilePic{
+img{
     margin-top: 70px;
-    margin-left: 230px;
-    width: 500px;
+    width:80%;
+    height: 300px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
 }
 
 /*white background*/
@@ -48,6 +51,25 @@ a:visited {
 /*headings*/
 h1{
     margin-left:auto;
-    font-size: 50px;
+    font-size: 20px;
     color: black;
+    text-align: center;
+}
+
+h2{
+    color:#404040;
+    font-size: 15px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    margin: 30px;
+}
+
+.profilePic{
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    width: 400px;
+    margin-left: 180px;
 }
