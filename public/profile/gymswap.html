@@ -9,7 +9,6 @@
     <!--linking the stylesheet-->
     <link rel="stylesheet" href="../styles/gymswap.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="styles/preloader.css">
     <!--linking the js-->
     <script src="../js/gymSwap.js"></script>
     <!--Title bar icon-->
@@ -20,8 +19,6 @@
 </head>
 
 <body>
-     <!-- Code to declare the preloader-->
-     <div id="preloader"></div>
      
     <section>
         <div class="main-container">
@@ -65,13 +62,6 @@
             </div>
         </div>
     </section>
-    <script>
-        //This script is to stop the loader from showing once the page has loaded
-        var loader = document.getElementById("preloader");
-        window.addEventListener("load", function(){
-            loader.style.display = "none";
-        })
-      </script>
 </body>
 
 </html>
