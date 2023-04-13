@@ -121,6 +121,22 @@ app.post('/login-user',(req,res) =>{
     })
 })
 
+app.get('/users', async (req, res) =>{
+    const searchName = req.query.fname
+    const query = {
+        text: 'SELECT * FROM USERS WHERE fname ILIKE $!',
+        values: [`%${searchName}%`],
+    }
+    try {
+        const { rows } = await db.query(query)
+        res.json(rows)
+    }
+    catch (err){
+        console.error(err)
+        res.status(500).send('Error querying database')
+    }
+})
+
 
 app.listen(3000, (req, res) => {
     console.log("listening on port 3000....... ")

@@ -14,8 +14,13 @@
 <body>
     <!-- code for search bar-->
   <form action="" class="search-bar">
-    <input type="text" placeholder="Search for User" name="q">
+    <input type="text" id="searchName" placeholder="Search for User">
   </form>
+    <!-- code to search for names from database -->
+  <button onclick="searchName()">Search for Names</button>
+
+
+  <div id="nameRes"></div>
 
         <!-- code for the bottom navbar -->
         <div class="navbar">
@@ -50,6 +55,9 @@
 
   <!-- importing ion icon -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <!-- links the javascript-->
+  <script src="../public/js/search.js"></script>
+  <script src="../public/js/script.js"></script>
 
 </body>
 </html>
