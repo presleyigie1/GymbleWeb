@@ -7,7 +7,7 @@ window.onload = () => {
       location.href = "/swipe";
     }else if (!sessionStorage.fname) {
         //fix for the glicth that was happening, refresh loop on login page
-        if (location.pathname !== "/login") {
+        if (location.pathname !== "/login" && location.pathname !=="/") {
           location.href = "/login";
         }
       } else {
