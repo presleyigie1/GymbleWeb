@@ -2,22 +2,20 @@
 const uName = document.querySelector(".uName")
 const userName = document.querySelector(".userName")
 
-window.onload = () =>{
-    if(sessionStorage.fname){
-        location.href = "/swipe"
-    }
-}
-
 window.onload = () => {
-    
-    if(!sessionStorage.fname){
-        location.href = "/login"
-    }
-    else{
+    if (sessionStorage.fname) {
+      location.href = "/swipe";
+    }else if (!sessionStorage.fname) {
+        //fix for the glicth that was happening, refresh loop on login page
+        if (location.pathname !== "/login" && location.pathname !=="/") {
+          location.href = "/login";
+        }
+      } else {
         uName.innerHTML = `Hi ${sessionStorage.fname}` 
-        userName.innerHTML = `${sessionStorage.fname}` 
-    }
-}
+        userName.innerHTML = `${sessionStorage.fname}`;
+      }
+  }
+  
 
 const logOut = document.querySelector(".logout-btn")
 

@@ -101,7 +101,7 @@ app.post("/register-user", async (req, res) =>{
             
     }}
 })
-
+//login
 app.post('/login-user',(req,res) =>{
     const {email, password} = req.body
 

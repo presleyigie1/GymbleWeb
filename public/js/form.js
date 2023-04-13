@@ -28,10 +28,9 @@ form.forEach((item, i ) => {
     }, i*100)
 })*/
 
-//form validation
 
 
-
+//form validation for the db
 const fName = document.querySelector(".fName") || null
 const lName = document.querySelector(".lName") 
 const email = document.querySelector(".email") 
