@@ -9,6 +9,7 @@
     <!--linking the stylesheets-->
     <link rel="stylesheet" href="/GymbleWeb/public/styles/add.css">
     <link rel="stylesheet" href="/GymbleWeb/public/styles/style.css">
+    <link rel="stylesheet" href="styles/preloader.css">
     <!--Title bar icon-->
     <link rel="icon" type="image/x-icon" href="/GymbleWeb/public/images/Icon.png">
         <!--importing ion icons -->
@@ -17,6 +18,8 @@
 </head>
 
 <body>
+    <!-- Code to declare the preloader-->
+    <div id="preloader"></div>
     <div class="main-container">
         <!-- Back button on the top left of the page-->
         <a class="backButton" href="/profile">
@@ -26,6 +29,13 @@
         </a>
         <h1 class="Title">Settings</h1>
     </div>
+    <script>
+        //This script is to stop the loader from showing once the page has loaded
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";
+        })
+      </script>
 </body>
 
 </html>

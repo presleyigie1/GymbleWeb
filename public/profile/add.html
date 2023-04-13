@@ -9,6 +9,7 @@
     <!--links to the stylesheets-->
     <link rel="stylesheet" href="../styles/add.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styles/preloader.css">
     <!--link to the javascript-->
     <script src="../js/add.js"></script>
     <script src="../js/script.js"></script>
@@ -19,6 +20,9 @@
 </head>
 
 <body>
+       <!-- Code to declare the preloader-->
+       <div id="preloader"></div>
+
     <div class="main-container">
         <!-- Back button on the top left of the page-->
         <a class="backButton" href="/profile">
@@ -67,7 +71,14 @@
 
 
     <script src="../js/user.js"></script>
-
+    
+  <script>
+    //This script is to stop the loader from showing once the page has loaded
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
+  </script>
 
 </body>
 
