@@ -12,8 +12,8 @@ const db = knex({
     //client is called pg because we are using the postgres connection (psql)
     client: "pg",
     connection:{
-        host:"109.78.97.4",
-        //host: "127.0.0.1",
+        //host:"109.78.97.4",
+        host: "127.0.0.1",
         user:"postgres",
         password: "gymble15",
         database: "loginform"
