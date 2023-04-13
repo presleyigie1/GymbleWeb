@@ -7,12 +7,9 @@
     <!-- linking the html page to css-->
     <link rel="stylesheet" href="../styles/gymble.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/preloader.css">
     <title>Gymble | Home</title>
 </head>
 <body>
-    <!-- Code to declare the preloader-->
-    <div id="preloader"></div>
 
     <div class = "overlay">
         <div class="gymble">
@@ -33,12 +30,5 @@
     </div>
     <script src="../js/form.js"></script>
     <script src="../js/user.js"></script>
-    <script>
-        //This script is to stop the loader from showing once the page has loaded
-        var loader = document.getElementById("preloader");
-        window.addEventListener("load", function(){
-        loader.style.display = "none";
-        })
-      </script>
 </body>
 </html>
