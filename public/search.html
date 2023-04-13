@@ -8,13 +8,10 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/search.css">
-    <link rel="stylesheet" href="styles/preloader.css">
     <!--Title bar icon-->
     <link rel="icon" type="image/x-icon" href="/GymbleWeb/public/images/Icon.png">
 </head>
 <body>
-    <!-- Code to declare the preloader-->
-    <div id="preloader"></div>
 
     <!-- code for search bar-->
   <form action="" class="search-bar">
@@ -63,12 +60,5 @@
   <script src="../public/js/search.js"></script>
   <script src="../public/js/script.js"></script>
 
-  <script>
-    //This script is to stop the loader from showing once the page has loaded
-    var loader = document.getElementById("preloader");
-    window.addEventListener("load", function(){
-        loader.style.display = "none";
-    })
-  </script>
 </body>
 </html>
