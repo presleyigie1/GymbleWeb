@@ -111,7 +111,11 @@ class Card{
 
 function helpFunction() {    
     alert("Swipe right to like the user, swipe left to skip. If you match you can chat in the messages page.");
+    return 'test working';
 };
+module.exports = helpFunction;
+
+helpFunction();
 
   //  alert("For an opportunity to match, swipe left if you don't like and right if you do!");
 
