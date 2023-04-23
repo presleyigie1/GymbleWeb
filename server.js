@@ -13,8 +13,8 @@ const db = knex({
     client: "pg",
     connection:{
         //host:"80.233.51.116",
-        //host:"109.78.97.4",
-        host: "127.0.0.1",
+        host:"109.78.97.4",
+        //host: "127.0.0.1",
         user:"postgres",
         password: "gymble15",
         database: "loginform"
@@ -71,11 +71,38 @@ app.get("/settings", (req, res) =>{
 app.post("/register-user", async (req, res) =>{
     //making it easier to access the variable name instead of using the full path for it 
 
+    function signUp(fName, lName,age,email,password){
+                //checking if fields are empty or not
+                if(!fName.length || !lName.length || !age.length || !email.length || !password.length){
+                    res.json("fill all the fields")
+                    return 'Empty field';
+                }
+                else{
+                    //storing the data that was filled in on the registration form into the databse
+                    db("users").insert({
+                        fname: fName,
+                        lname: lName,
+                        age: age,
+                        email: email,
+                        password: password
+                    })
+                    //information taken from registration to add to html
+                    .returning(["fname","age","email"])
+                    .then(data =>{
+                        res.json(data[0])
+                    })
+                    //using catch block to look for a specific error to check if the user already exists
+                    return 'putting in the database'
+                }
+                
+    }
+    //module.exports = EmmasSignUp;
     try{
         const{fName, lName,age,email,password} = req.body
+        signUp(fName, lName,age,email,password);
         
         //checking if fields are empty or not
-        if(!fName.length || !lName.length || !age.length || !email.length || !password.length){
+        /*if(!fName.length || !lName.length || !age.length || !email.length || !password.length){
             res.json("fill all the fields")
         }
         else{
@@ -93,7 +120,7 @@ app.post("/register-user", async (req, res) =>{
                 res.json(data[0])
             })
             //using catch block to look for a specific error to check if the user already exists
-        }
+        }*/
     }
     catch(e){
         if(err.detail.includes('already exists')){
@@ -102,9 +129,15 @@ app.post("/register-user", async (req, res) =>{
             
     }}
 })
-//login
-app.post('/login-user',(req,res) =>{
-    const {email, password} = req.body
+/*function EmmasLogin(){
+    var testVariable;
+    testVariable = 1;
+    return testVariable;
+}*/
+//module.exports = EmmasLogin;
+
+function login(email,password){
+
 
     db.select("fname","email")
     .from("users")
@@ -115,11 +148,37 @@ app.post('/login-user',(req,res) =>{
     .then(data =>{
         if(data.length){
             res.json(data[0])
+            return "found";
         }
         else{
             res.json("email or password is incorrect")
+            return "not found";
         }
+        //returnText = "connected";
+        //return returnText;
     })
+    //if database is not working, it will not run the select statement above
+    return "Cannot connect to the database";
+ 
+
+}
+//module.exports = login;
+
+/*function fizz_buzz(numbers) {
+    let result = []
+    result.push('fizzbuzz')
+    
+    return result.join(', ')
+}
+
+module.exports = fizz_buzz;*/
+
+
+//login
+app.post('/login-user',(req,res) =>{
+    const {email, password} = req.body
+    /*EmmasLogin();*/
+    login(email,password);
 })
 
 app.get('/users', async (req, res) =>{
@@ -142,6 +201,8 @@ app.get('/users', async (req, res) =>{
 app.listen(3000, (req, res) => {
     console.log("listening on port 3000....... ")
 })
+
+
 
 //k
 /*
